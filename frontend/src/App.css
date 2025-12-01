@@ -1,0 +1,51 @@
+/* Light mode (default) */
+:root {
+  --bg: #f5f5f5;
+  --text: #222;
+  --bubble-user: #d1e7ff;
+  --bubble-bot: #ffffff;
+  --header-bg: #ffffff;
+  --input-bg: #ffffff;
+}
+
+/* Dark mode */
+.dark {
+  --bg: #121212;
+  --text: #f1f1f1;
+  --bubble-user: #2b5278;
+  --bubble-bot: #1e1e1e;
+  --header-bg: #1b1b1b;
+  --input-bg: #1a1a1a;
+}
+
+/* Smooth transitions */
+body, .app-container {
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Apply theme variables */
+.app-container {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.chat-window {
+  background: var(--bg);
+}
+
+.bubble-user {
+  background: var(--bubble-user);
+}
+
+.bubble-bot {
+  background: var(--bubble-bot);
+}
+
+header {
+  background: var(--header-bg);
+}
+
+.chat-input {
+  background: var(--input-bg);
+  color: var(--text);
+}

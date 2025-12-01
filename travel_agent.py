@@ -1,6 +1,6 @@
 from uniassist_ai.gemini_client import ask_gemini
 
-class MealAgent:
+class TravelAgent:
     def handle(self, query: str):
-        prompt = f"Create a healthy and affordable meal plan for: {query}"
+        prompt = f"Give a full travel plan (flight + hotel + itinerary) for: {query}"
         return ask_gemini(prompt)

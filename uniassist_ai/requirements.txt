@@ -1,0 +1,6 @@
+gradio
+pandas
+fastapi
+pytest
+python-dotenv
+requests
